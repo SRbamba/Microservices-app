@@ -11,5 +11,7 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/config
+        git:
+          uri: https://github.com/SRbamba/microservices-config
+          skip-ssl-validation: true
+          clone-on-start: true

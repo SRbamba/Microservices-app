@@ -15,11 +15,14 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="discovery-Server" />
-        <module name="gateway-server" />
         <module name="config-server" />
+        <module name="gateway-server" />
+        <module name="microservice-department" />
+        <module name="microservice-employee" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="employees" target="21" />
       <module name="eureka-Server" target="21" />
     </bytecodeTargetLevel>
   </component>
@@ -27,9 +30,13 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
       <module name="discovery-Server" options="-parameters" />
+      <module name="employees" options="-parameters" />
       <module name="eureka-Server" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
+      <module name="microservice-department" options="-parameters" />
+      <module name="microservice-employee" options="-parameters" />
       <module name="my-app" options="-parameters" />
+      <module name="spring-microservices-app" options="-parameters" />
     </option>
   </component>
 </project>
